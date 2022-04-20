@@ -63,7 +63,9 @@
         <h1 class="hero-title container">
           Эффективные решения для вашего бизнеса
         </h1>
-        <button type="button" class="button-top">Заказать услугу</button>
+        <button type="button" class="button-top" data-modal-open>
+          Заказать услугу
+        </button>
       </section>
 
       <!-- Преимущества -->
@@ -137,15 +139,24 @@
 
           <ul class="flex-cont list">
             <li class="item">
-              <img src="./images/img.jpg" alt="desctop" width="370" />
+              <div class="box-computer-img">
+                <img src="./images/img.jpg" alt="desctop" width="370" />
+                <p class="text-on-img list">Десктопные приложения</p>
+              </div>
             </li>
 
             <li class="item">
-              <img src="./images/img2.jpg" alt="phone" width="370" />
+              <div class="box-computer-img">
+                <img src="./images/img2.jpg" alt="phone" width="370" />
+                <p class="text-on-img list">Мобильные приложения</p>
+              </div>
             </li>
 
             <li class="item">
-              <img src="./images/img3.jpg" alt="tablet" width="370" />
+              <div class="box-computer-img">
+                <img src="./images/img3.jpg" alt="tablet" width="370" />
+                <p class="text-on-img list">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -401,5 +412,15 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-modal" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="11" height="11">
+            <use href="./icon/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
